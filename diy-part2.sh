@@ -16,8 +16,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i 's/DEPENDS:=+wpa_supplicant/DEPENDS:=+wpa-supplicant/g' feeds/packages/net/ieee8021xclient/Makefile
 
 # Modify default theme
-sed -i "3a\uci set luci.main.mediaurlbase=/luci-static/material" package/emortal/default-settings/files/99-default-settings
-# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify Laug
 sed -i 's/auto/zh_cn/g' package/emortal/default-settings/files/99-default-settings
@@ -28,11 +27,11 @@ sed -i 's/auto/zh_cn/g' package/emortal/default-settings/files/99-default-settin
 #sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/admem.sh
 
 # 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i 's/ImmortalWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/SiYRT/g' package/base-files/files/bin/config_generate
 
 # 增加个性名字
 sed -i "24a\sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release" package/emortal/default-settings/files/99-default-settings
-sed -i "25a\echo \"DISTRIB_DESCRIPTION=\'BrianLuo Compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt 21.02 \'\" >> /etc/openwrt_release" package/emortal/default-settings/files/99-default-settings
+sed -i "25a\echo \"DISTRIB_DESCRIPTION=\'暮雨晚归舟 Compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt 21.02 \'\" >> /etc/openwrt_release" package/emortal/default-settings/files/99-default-settings
 
 # 设置密码为空
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/emortal/default-settings/files/99-default-settings                                                            
