@@ -16,16 +16,16 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i 's/DEPENDS:=+wpa_supplicant/DEPENDS:=+wpa-supplicant/g' feeds/packages/net/ieee8021xclient/Makefile
 
 # Modify default theme
-sed -i "3a\uci set luci.main.mediaurlbase=/luci-static/material" package/emortal/default-settings/files/99-default-settings
+# sed -i "3a\uci set luci.main.mediaurlbase=/luci-static/material" package/emortal/default-settings/files/99-default-settings
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify Laug
 sed -i 's/auto/zh_cn/g' package/emortal/default-settings/files/99-default-settings
 
 # Modify Adyby Update Script
-sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/adupdate.sh
-sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/adbybyupdate.sh
-sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/admem.sh
+# sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/adupdate.sh
+# sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/adbybyupdate.sh
+# sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/admem.sh
 
 # 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i 's/ImmortalWrt/SiYRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
