@@ -36,7 +36,7 @@ env:
 
 jobs:
   build:
-    name: 编译OpenWrt-immortalwrt-mt798x固件
+    name: 编译OpenWrt-immortalwrt-mt798x-ver237wtwifi固件
     runs-on: ubuntu-22.04
 
     steps:
@@ -159,7 +159,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.UPLOAD_FIRMWARE == 'true' && steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: ax3000t-immortalwrt-mt798x固件
+        name: ax3000t-immortalwrt-mt798x-ver237mtwifi固件
         path: ${{ env.FIRMWARE }}
 
     - name: 生成release标签
