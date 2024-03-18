@@ -9,7 +9,7 @@
 # Description: Build Immortalwrt using GitHub Actions
 #
 
-name: Build Immortalwrt MT7981
+name: Build Immortalwrt AX3000t-ssr
 
 on:
   repository_dispatch:
