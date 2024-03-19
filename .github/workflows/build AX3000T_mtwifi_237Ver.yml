@@ -8,8 +8,7 @@
 # Description: Build Immortalwrt using GitHub Actions
 #
 
-name: Build  237-mtwifi-ax3000t
-
+name: Build  AX3000T_mtwifi_237Ver
 on:
   repository_dispatch:
   workflow_dispatch:
