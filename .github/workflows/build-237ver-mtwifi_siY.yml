@@ -8,7 +8,7 @@
 # Description: Build Immortalwrt using GitHub Actions
 #
 
-name: Build Immortalwrt Ver237 Mtwifi MT7981
+name: Build Immortalwrt Ver237 Mtwifi MT7981 SiY
 
 on:
   repository_dispatch:
@@ -114,7 +114,7 @@ jobs:
       uses: stupidloud/cachewrtbuild@main
       with:
         ccache: 'true'
-        mixkey: 'mt7983'
+        mixkey: 'mt7981'
         prefix: 'openwrt'
 
     - name: Download package
