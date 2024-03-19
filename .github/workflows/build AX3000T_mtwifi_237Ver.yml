@@ -168,8 +168,7 @@ jobs:
         echo -e "✅ immortalwrt-mt798x 源码版本" >> release.txt
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")-ax3000t">> $GITHUB_OUTPUT
         touch release.txt
-        echo "xiaomi_ax3000t" >> release.txt
-        echo "📥 SiY_ax3000t_Ver237_mtwifi" >> release.txt
+        echo "📥 XiaoMi_ax3000t_Ver237_mtwifi" >> release.txt
         echo "status=success" >>$GITHUB_OUTPUT
 
     - name: 上传固件到release
