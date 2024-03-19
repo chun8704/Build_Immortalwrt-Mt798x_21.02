@@ -24,7 +24,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AX3000T_237Ver.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
+  DIY_P2_SH: diy-part4.sh
   FEED_CLEAN: feed-clean.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
