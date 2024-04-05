@@ -28,7 +28,7 @@ sed -i 's/auto/zh_cn/g' package/emortal/default-settings/files/99-default-settin
 # sed -i 's/https:\/\/adbyby\.coding\.net\/p\/xwhyc-rules\/d\/xwhyc-rules\/git\/raw\/master\//https:\/\/cdn.jsdelivr.net\/gh\/kongfl888\/ad-rules\//g' feeds/luci/applications/luci-app-adbyby-plus/root/usr/share/adbyby/admem.sh
 
 # 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i 's/ImmortalWrt/SiYWrt/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/SiWrt/g' package/base-files/files/bin/config_generate
 
 # 增加个性名字
 # sed -i "24a\sed -i \'/DISTRIB_RELEASE/d\' /etc/openwrt_release" package/emortal/default-settings/files/zzz-default-settings
